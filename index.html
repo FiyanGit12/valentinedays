@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h2>Happy Valentine's Day!</h2>
+            <p>Enter your PIN to continue</p>
+            <div class="pin-input">
+                <input type="password" id="pin" maxlength="4" placeholder="Enter PIN" autofocus>
+            </div>
+            <button id="submit" onclick="checkPin()">Submit</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+
+    <div class="hidden-content" id="hidden-content">
+        <h2>Congratulations!</h2>
+        <p>You've unlocked your Valentine's Day surprise!</p>
+        
+        <div class="memories">
+            <h3>Your Special Memories</h3>
+            <div class="images">
+                <img class="fade-in" src="foto 1.jpg" alt="Memory 1">
+                <img class="fade-in" src="foto 5.jpg" alt="Memory 2">
+                <img class="fade-in" src="foto 6.jpg" alt="Memory 3">
+                <img class="fade-in" src="foto 7.jpg" alt="Memory 3">
+            </div>
+        </div>
+
+        <div class="greeting-card">
+            <h3>Valentine's Day Card</h3>
+            <p id="typing-text"></p>
+        </div>
+
+        <!-- Audio yang disembunyikan dan diputar secara otomatis -->
+        <audio id="background-audio" autoplay style="display: none;">
+            <source src="ssstik.io_1737962928048.mp3" type="audio/mp3">
+            <!-- Format alternatif -->
+            <source src="ssstik.io_1737962928048.ogg" type="audio/ogg">
+            <source src="ssstik.io_1737962928048.wav" type="audio/wav">
+        </audio>
+
+        <a href="https://www.tiktok.com/@damnjb/video/7470939636458671368?is_from_webapp=1&sender_device=pc&web_id=7351970402887599624" target="_blank">awa</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
